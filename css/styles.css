@@ -7,6 +7,14 @@
   --background-color-team: #f5f4fa;
   --main-text-color: #757575;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 p,
 h1,
 h2,
@@ -18,7 +26,11 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
@@ -29,6 +41,9 @@ body {
 ul {
   list-style: none;
 }
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -36,7 +51,6 @@ ul {
   padding-right: 15px;
 }
 .header .container {
-  border-bottom: 1px solid #ececec;
   display: flex;
   align-items: center;
 }
@@ -274,10 +288,9 @@ ul {
 .portfolio-button {
   display: flex;
   justify-content: center;
-}
-.portfolio-button .item {
   margin-bottom: 50px;
 }
+
 .portfolio-button .item:not(:last-child) {
   margin-right: 8px;
 }
@@ -314,7 +327,7 @@ ul {
   width: 370px;
   margin-right: 30px;
   border: 1px solid #eeeeee;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .portfolio-works .item:nth-child(3) {
   margin-right: 0px;
